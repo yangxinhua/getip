@@ -27,9 +27,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
- */
 @Controller
 public class BasicController {
     @RequestMapping("/getip")
