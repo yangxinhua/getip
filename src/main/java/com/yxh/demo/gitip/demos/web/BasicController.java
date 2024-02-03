@@ -46,19 +46,4 @@ public class BasicController {
 
         return dateFormat.format(date)+"，ClientIP："+request.getRemoteAddr()+"，ServerIP："+localHost.getHostAddress();
     }
-
-    // http://127.0.0.1:8080/hello?name=lisi
-    @RequestMapping("/hello")
-    @ResponseBody
-    public String hello(@RequestParam(name = "name", defaultValue = "unknown user") String name) {
-        return "Hello " + name;
-    }
-
-    // http://127.0.0.1:8080/html
-    @RequestMapping("/html")
-    public String html() {
-        return "index.html";
-    }
-
-
 }
