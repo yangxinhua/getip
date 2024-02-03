@@ -43,7 +43,6 @@ public class BasicController {
         }
         Date date = new Date();
         SimpleDateFormat dateFormat= new SimpleDateFormat("yyyy-MM-dd :hh:mm:ss");
-
         return dateFormat.format(date)+"，ClientIP："+request.getRemoteAddr()+"，ServerIP："+localHost.getHostAddress();
     }
 }
